@@ -1,8 +1,7 @@
 import React,{Component} from 'react'
-import {Button,message} from 'antd'
-import { Switch,Route } from "react-router-dom"
-import Admin from './pages/admin/admin'
-import Login from './pages/login/login'
+import { Switch,Route,Redirect } from "react-router-dom"
+import Admin from './container/admin/admin'
+import Login from './container/login/login'
 
 export default class App extends Component{
 
@@ -12,6 +11,7 @@ export default class App extends Component{
         <Switch>
           <Route path="/admin" component={Admin}/>
           <Route path="/login" component={Login}/>
+          <Redirect to="/admin"/>
         </Switch>
       </div>
     )

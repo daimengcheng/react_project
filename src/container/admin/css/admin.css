@@ -1,0 +1,16 @@
+.admin {
+  height: 100%;
+}
+.admin .sider {
+  color: white;
+}
+.admin .header {
+  color: white;
+}
+.admin .content {
+  background-color: white;
+  margin: 15px 15px 0 15px;
+}
+.admin .footer {
+  text-align: center;
+}
